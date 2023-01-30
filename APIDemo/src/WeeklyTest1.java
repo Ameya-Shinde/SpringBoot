@@ -5,7 +5,7 @@ import java.net.http.HttpResponse;
 
 public class WeeklyTest1 {
     public static void main(String[] args) throws Exception {
-        String url = "https://jsonplaceholder.typicode.com/albums";
+        String url = "https://api.chucknorris.io/jokes/random";
 
         //building a request
         HttpRequest request = HttpRequest.newBuilder().GET().uri(URI.create(url)).build();
