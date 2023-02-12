@@ -23,7 +23,7 @@ Get All event by date,
 
 # Data Structure Used
 
-Simple In-Memory Database using List 
+In-Memory Database using List(ArrayList)
 
 # Project Summary 
 * This a simple API for University Event Management 
