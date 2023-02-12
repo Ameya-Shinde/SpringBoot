@@ -5,6 +5,7 @@
 * SpringBoot
 * Java
 
-* Data Flow
+# Data Flow
+* Controller - Rest Controller
 
- Controller(Rest Controller)
+Used with @GetMapping, @RequestMapping, @PutMapping, @DeleteMapping and @AutoWired 
