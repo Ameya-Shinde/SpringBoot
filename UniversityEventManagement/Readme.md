@@ -1,5 +1,3 @@
-# Project Description 
-* This a simple API for University Event Management 
 
 # FrameWorks and Language Used
 * SpringBoot
@@ -26,3 +24,10 @@ Get All event by date,
 # Data Structure Used
 
 Simple In-Memory Database using List 
+
+# Project Summary 
+* This a simple API for University Event Management 
+* You can manage Student details as well as Event details with this
+* All the Event details and Student Information are Updatable 
+* If required you can also delete specific Event and student details
+
