@@ -26,7 +26,7 @@ deleteUser
  ###### Table attribute are 
   1. user_id
   2. user_name
-  3. DOB
+  3. DOB (dd-MM-yyyy)
   4. email
   5. phone_number
   6. created_date 
@@ -45,3 +45,6 @@ H2 Database
 * All the User details are Updatable 
 * If required you can also delete specific User details
 * All the details are added in the H2 for easier data viewing via table of User
+* This project contails a Util package witch is used for validation of input attributes
+* We are giving a streamlined Response entity message if an attribute is not valid
+* This saves the client to find what exactly has gone wrong
