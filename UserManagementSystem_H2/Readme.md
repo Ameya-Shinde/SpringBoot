@@ -9,10 +9,10 @@ Used with @GetMapping, @RequestMapping, @PutMapping, @RequestBody, @RequestParam
 
 * Services
 
-addUser 
-getUser/{userid}
-getAllUser
-updateUserInfo
+addUser, 
+getUser/{userid}, 
+getAllUser, 
+updateUserInfo, 
 deleteUser
 
 * Repository
