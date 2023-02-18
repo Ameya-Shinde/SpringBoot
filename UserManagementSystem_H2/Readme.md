@@ -18,6 +18,22 @@ deleteUser
 * Repository
 
   Jpa Repository is used which extends CRUD Respository
+  
+* DataBase Design
+
+ ###### We have a table of Users with name "tbl_user" 
+ ###### It has all the attributes of user as table columns
+ ###### Table attribute are 
+  1. user_id
+  2. user_name
+  3. DOB
+  4. email
+  5. phone_number
+  6. date 
+  7. time
+
+  ###### We have user_id as our Primary_Key in our database
+ 
 
 # Data Structure Used
 
