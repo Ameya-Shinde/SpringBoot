@@ -29,8 +29,8 @@ deleteUser
   3. DOB
   4. email
   5. phone_number
-  6. date 
-  7. time
+  6. created_date 
+  7. created_time
 
   ###### We have user_id as our Primary_Key in our database
  
