@@ -27,12 +27,8 @@ Used with @GetMapping, @RequestMapping, @PutMapping, @RequestBody, @RequestParam
 
  ###### We have a tables of Users, Products, Address and Order 
  ###### It has all the attributes of user, product, address and order class as table columns
- ###### Table attributes for User are 
-  1. Id:integer
-  2. name:string
-  3. email:string
-  4. password:string
-  5. phoneNumber:string
+ 
+  
   
   
   
