@@ -27,7 +27,20 @@ Used with @GetMapping, @RequestMapping, @PutMapping, @RequestBody, @RequestParam
 
  ###### We have a tables of Users, Products, Address and Order 
  ###### It has all the attributes of user, product, address and order class as table columns
+ ###### We have used foreign keys to join our tables to create link between Address with User, also Order with Product, Address and User 
  
+
+# Data Structure Used
+
+H2 Database
+
+# Project Summary 
+* This a simple Ecommerce API
+* You can add and manage User details
+* All the details are added in the H2 for easier data viewing via table of User
+* This project contails a Util package witch is used for validation of input attributes
+* We are giving a streamlined Response entity message if an attribute is not valid
+* This saves the client to find what exactly has gone wrong
   
   
   
