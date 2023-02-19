@@ -37,11 +37,8 @@ H2 Database
 # Project Summary 
 * This a simple Ecommerce API
 * You can add and manage User details
-* All the details are added in the H2 for easier data viewing via table of User
-* This project contails a Util package witch is used for validation of input attributes
-* We are giving a streamlined Response entity message if an attribute is not valid
-* This saves the client to find what exactly has gone wrong
-  
-  
-  
+* You can add and manage product details
+* You can add and manage Address details
+* You can create Orders
+* All the details are added in the H2 for easier data viewing via table of User 
   
