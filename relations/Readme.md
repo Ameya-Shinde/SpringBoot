@@ -17,6 +17,10 @@ CRUD operations
 
   Jpa Repository is used which extends CRUD Respository
   
+#DataBaseDesign
+
+![Screenshot 2023-02-26 210353](https://user-images.githubusercontent.com/93002372/221420475-99a5e06d-8dff-482a-8cc3-a203dafaef6f.png)
+  
 # Data Structure Used
 
 MYSQL Database
