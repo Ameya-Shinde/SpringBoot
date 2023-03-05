@@ -23,7 +23,7 @@ Used with @GetMapping, @RequestMapping, @PutMapping, @RequestBody, @RequestParam
   
 #DataBaseDesign
 
-![Querry_db](https://user-images.githubusercontent.com/93002372/222972535-4569414b-3282-46f7-ab19-b3adfa88c982.png)
+![Instagram](https://user-images.githubusercontent.com/93002372/222980553-df251f11-ecd3-4b33-a8de-a60bff64bd43.png)
   
 # Data Structure Used
 
