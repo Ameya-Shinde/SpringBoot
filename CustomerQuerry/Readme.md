@@ -18,7 +18,7 @@ Queries by method name and also using query annotation query for all mysql keywo
   
 #DataBaseDesign
 
-![Screenshot 2023-02-26 210353](https://user-images.githubusercontent.com/93002372/221420475-99a5e06d-8dff-482a-8cc3-a203dafaef6f.png)
+![Querry_db](https://user-images.githubusercontent.com/93002372/222972535-4569414b-3282-46f7-ab19-b3adfa88c982.png)
   
 # Data Structure Used
 
