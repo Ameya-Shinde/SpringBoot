@@ -19,6 +19,7 @@ Used with @GetMapping, @RequestMapping, @PutMapping, @RequestBody, @RequestParam
   Jpa Repository is used which extends CRUD Respository
   
 * DataBase Design
+
 ![Doctor](https://user-images.githubusercontent.com/93002372/223197414-677b1b1e-abe5-4d2c-8799-19b0ec4a9526.png)
  
  
