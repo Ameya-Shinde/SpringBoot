@@ -10,12 +10,12 @@ Used with @GetMapping, @RequestMapping, @PutMapping, @RequestBody, @RequestParam
 
 * Services
 
-1. Add User
-2. Update User
+1. Add Users
+2. Update Users
 3. Get listof users or find a particular user
-4. Create String Post
-5. Update Post details
-6. Get Posts based on your userId
+4. Send or receive message
+5. Update message details
+6. Get message based on your userId
 
 * Repository
 
@@ -23,7 +23,7 @@ Used with @GetMapping, @RequestMapping, @PutMapping, @RequestBody, @RequestParam
   
 #DataBaseDesign
 
-![Instagram](https://user-images.githubusercontent.com/93002372/222980553-df251f11-ecd3-4b33-a8de-a60bff64bd43.png)
+![chatApplication](https://user-images.githubusercontent.com/93002372/224075123-9c42eb5a-b5fd-449a-9587-f5870d14deb9.png)
   
 # Data Structure Used
 
@@ -31,6 +31,7 @@ MYSQL Database
 
 # Project Summary
 
-* A simple Api based on instagram
-* User can join and create many posts
-* Posts can be updated
+* A simple chat Api 
+* User can join and send messages to each other
+* messages can be edited
+* Chat history is also available
