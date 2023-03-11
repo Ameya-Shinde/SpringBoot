@@ -21,7 +21,7 @@ Used with @GetMapping, @RequestMapping, @PutMapping, @RequestBody, @RequestParam
   
 #DataBaseDesign
 
-![Querry_db](https://user-images.githubusercontent.com/93002372/222972535-4569414b-3282-46f7-ab19-b3adfa88c982.png)
+![deployment](https://user-images.githubusercontent.com/93002372/224515020-e7e5037e-ee2c-46b7-bf8c-60f8a19065fc.png)
   
 # Data Structure Used
 
