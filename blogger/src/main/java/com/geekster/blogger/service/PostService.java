@@ -60,7 +60,7 @@ public class PostService {
         return masterJson;
     }
 
-    public Post getUserIdByPostId(int postId){
+    public Post getPostByPostId(int postId){
         Post post;
         if(postRepository.findById(Integer.valueOf(postId)).isPresent()){
             post = postRepository.findById(Integer.valueOf(postId)).get();

@@ -2,6 +2,7 @@ package com.geekster.blogger.controller;
 
 import com.geekster.blogger.Util.CurrentUser;
 import com.geekster.blogger.dto.PostDto;
+import com.geekster.blogger.dto.PostUpdateDto;
 import com.geekster.blogger.model.Post;
 import com.geekster.blogger.model.User;
 import com.geekster.blogger.repository.UserRepository;
@@ -52,16 +53,17 @@ public class PostController {
     }
 
     @PutMapping(value = "/update/{postId}")
-    public ResponseEntity<String> updatePost(@PathVariable String postId, @RequestBody PostDto postRequest) {
+    public ResponseEntity<String> updatePost(@PathVariable String postId, @RequestBody PostUpdateDto postRequest) {
 
-        Post post = postService.getUserIdByPostId(Integer.valueOf(postId));
+        Post post = postService.getPostByPostId(Integer.valueOf(postId));
         int userId = post.getUser().getUserId();
         if(userId == 0){
             return  new ResponseEntity<>("Post not found", HttpStatus.BAD_REQUEST);
         }
 
         if(CurrentUser.currentUser == userId){
-            postService.updatePost(postId, post);
+            Post editPost = setUpdatedPost(postRequest, userId);
+            postService.updatePost(postId, editPost);
             return  new ResponseEntity<>("Post updated", HttpStatus.OK);
         }else{
             return  new ResponseEntity<>("You do not have edit access or need to login ", HttpStatus.BAD_REQUEST);
@@ -81,6 +83,23 @@ public class PostController {
         JSONObject jsonObject = new JSONObject(postRequest);
         User user = null;
         int userId = jsonObject.getInt("userId");
+        if(userRepository.findById(userId).isPresent()) {
+            user = userRepository.findById(userId).get();
+        } else {
+            return null;
+        }
+        Post post = new Post();
+        post.setUser(user);
+        post.setPostData(jsonObject.getString("postData"));
+        Timestamp createdTime = new Timestamp(System.currentTimeMillis());
+        post.setCreatedDate(createdTime);
+        return post;
+
+    }
+
+    private Post setUpdatedPost(PostUpdateDto postRequest, int userId) {
+        JSONObject jsonObject = new JSONObject(postRequest);
+        User user = null;
         if(userRepository.findById(userId).isPresent()) {
             user = userRepository.findById(userId).get();
         } else {
