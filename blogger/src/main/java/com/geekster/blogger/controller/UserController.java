@@ -4,7 +4,9 @@ import com.geekster.blogger.dto.LoginDto;
 import com.geekster.blogger.model.User;
 import com.geekster.blogger.repository.UserRepository;
 import com.geekster.blogger.service.UserService;
+import jakarta.annotation.Nullable;
 import jakarta.validation.Valid;
+import org.json.JSONArray;
 import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -23,6 +25,15 @@ public class UserController {
 
     @Autowired
     UserRepository userRepository;
+
+
+    @GetMapping(value = "/get-users")
+    public ResponseEntity<String> getUsers(@Nullable @RequestParam String userId) {
+
+        JSONArray userArr = userService.getUsers(userId);
+        return new ResponseEntity<>(userArr.toString(), HttpStatus.OK);
+
+    }
 
     @PostMapping("/add")
     public ResponseEntity<String> createUser(@Valid @RequestBody User user){

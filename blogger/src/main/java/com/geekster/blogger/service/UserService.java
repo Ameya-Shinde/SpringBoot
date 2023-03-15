@@ -3,6 +3,7 @@ package com.geekster.blogger.service;
 import com.geekster.blogger.Util.CurrentUser;
 import com.geekster.blogger.model.User;
 import com.geekster.blogger.repository.UserRepository;
+import org.json.JSONArray;
 import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -47,5 +48,23 @@ public class UserService {
         jsonObj.put("email", user.getEmail());
         jsonObj.put("phoneNumber", user.getPhoneNumber());
         return jsonObj;
+    }
+
+    public JSONArray getUsers(String userId) {
+        JSONArray response = new JSONArray();
+        if(null != userId) {
+            List<User> usersList = userRepository.getUserByUserId(Integer.valueOf(userId));
+            for (User user:usersList) {
+                JSONObject userObj = createResponse(user);
+                response.put(userObj);
+            }
+        } else {
+            List<User> usersList = userRepository.findAll();
+            for (User user:usersList) {
+                JSONObject userObj = createResponse(user);
+                response.put(userObj);
+            }
+        }
+        return response;
     }
 }
