@@ -1,3 +1,14 @@
+# Project Summary
+
+* This a simple  Blogger api deployed on EC2 with the help of termius
+* You can perform the services in this api on remote devices as well
+* It is deployed on Ubuntu
+
+# Links
+Project Url : https://lnkd.in/g3GxxwDU
+
+GitHub Link : https://lnkd.in/gNTT4-hd
+
 # FrameWorks and Language Used
 * SpringBoot
 * Java
@@ -31,13 +42,4 @@ Annotation Based Validations are Used
 
 MYSQL Database
 
-# Project Summary
 
-* This a simple  Blogger api deployed on EC2 with the help of termius
-* You can perform the services in this api on remote devices as well
-* It is deployed on Ubuntu
-
-# Links
-Project Url : https://lnkd.in/g3GxxwDU
-
-GitHub Link : https://lnkd.in/gNTT4-hd
